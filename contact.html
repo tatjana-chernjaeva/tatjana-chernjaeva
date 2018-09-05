@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Box personal portfolio Template</title>
+    <title>Контакты. Пригласить Татьяну Черняеву на выступление</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
+    <meta name="description" content="Вы можете пригласить Татьяну Черняеву на Ваше мероприятие отправив запрос с этой страницы" />
+    <meta name="keywords" content="татьяна черняева контакты, заказ выступления певицы" />
+
+	
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -45,7 +49,7 @@
         <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+                <a href="index.html"><img src="img/logo.png" width="150" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -58,14 +62,13 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">About me</li>
+                <li class="box-label">Татьяна Черняева</li>
 
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact me</a> <i class="ion-ios-circle-filled color"></i></li>
-
+                <li><a href="index.html">Главная</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="about.html">О певице</a></li>
+                <li><a href="portfolio.html">Репертуар</a></li>
+                <li><a href="services.html">Мероприятия</a></li>
+                <li><a href="contact.html">Контакты. Пригласить Артиста</a></li>
 
 
                 <li class="box-label">Follow me</li>
@@ -82,8 +85,8 @@
 
     <!-- top bar -->
     <div class="top-bar">
-        <h1>contact Me</h1>
-        <p><a href="#">Home</a> / Contact Me</p>
+        <h1>Свяжитесь со мной</h1>
+        <p><a href="#">Главная</a> / Контакты</p>
     </div>
     <!-- end top bar -->
 
@@ -95,42 +98,45 @@
                     <div class="col-md-6">
                         <div class="input-contact">
                             <input type="text" name="name">
-                            <span>your name</span>
+                            <span>Ваше имя</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-contact">
                             <input type="text" name="email">
-                            <span>your email</span>
+                            <span>email</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="input-contact">
                             <input type="text" name="object">
-                            <span>object</span>
+                            <span>Тема</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="textarea-contact">
                             <textarea name="message"></textarea>
-                            <span>message</span>
+                            <span>Сообщение</span>
                         </div>
                     </div>
+					<input type="text" style="display:none;" name="from_domen" value="Tatjana Chernjaeva">
+					<input type="text" style="display:none;" name="phone"> 
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-box">Send</a>
+						<input type="button" class="btn btn-box" value="Отправить" onclick="send_msg()">
                     </div>
                 </div>
             </form>
         </div>
-
+        <iframe  id="IFrame1" src="send_form.html" style="display:none;" > </iframe>
         <div class="col-md-6">
-            <h3 class="text-uppercase">contact me</h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
+            <h3 class="text-uppercase">Контакты</h3>
+            <h5>Свяжитесь с Заслуженной артисткой России, певицей Татяной Черняевой</h5>
             <div class="h-30"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus </p>
-            <div class="contact-info">
-                <p><i class="ion-android-call"></i> 0100 787 3456</p>
-                <p><i class="ion-ios-email"></i> box@info.com</p>
+            <p>Я буду рада приглашению выступить на Вашем мероприятии - свадьбе, юбилее, копроративе, торжественном событии. Также Вы можете связаться со мной по любому другому вопросу. Для этого отправьте, пожалуйста, сообщение с данной страницы, или напишите на электронную почту, я обязательно Вам отвечу. </p>
+            <p>С наилучшими пожеланиями !</p>
+			<p>Ваша Татьяна Черняева </p>
+			<div class="contact-info">
+                <p><i class="ion-ios-email"></i> tatjana.chernjaeva@mail.ru</p>
             </div>
         </div>
 
@@ -141,7 +147,7 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
+            <p class="copyright">© Татьяна Черняева, 2018</p>
         </div>
     </footer>
     <!-- end footer -->
@@ -163,7 +169,9 @@
 
     <!--  custom script -->
     <script src="js/custom.js"></script>
+    <script src="js/my_custom.js"></script>
 
+	
 </body>
 
 </html>
