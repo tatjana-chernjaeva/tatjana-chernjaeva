@@ -8,5 +8,5 @@ function send_msg() {
 	//alert("Пришли сюда 555");
 	//alert(aaa);
 	var aaa = document.getElementById('IFrame1').contentWindow.document.getElementById('from_domen');
-	alert(aaa);
+	alert(aaa.value);
 }
