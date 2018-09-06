@@ -9,7 +9,7 @@ function send_msg() {
 	//alert(aaa);
 	frm = document.getElementById("IFrame1");
 
-	frm.contentWindow.document.getElementById('sender_name').value = getElementsByName('name')[0].value;
+	frm.contentWindow.document.getElementById('sender_name').value = document.getElementById('send_name').value;
 	frm.contentWindow.document.getElementById('sender_email').value = 'pup@mail.ru';
 	frm.contentWindow.document.getElementById('sender_phone').value = '+79161148255';
 	frm.contentWindow.document.getElementById('sender_topic').value = 'Привет Мир!';
