@@ -8,10 +8,11 @@ function send_msg() {
 	//alert("Пришли сюда 555");
 	//alert(aaa);
 	frm = document.getElementById("IFrame1");
-	frm.contentWindow.document.getElementByName('name').value = 'Вася Пупкин';
+
+	frm.contentWindow.document.getElementById('sender_name').value = 'Вася Пупкин';
 	frm.contentWindow.document.getElementById('from_domen').value = 'Tanjana-Chernyaeva';
 	frm.contentWindow.document.getElementById("send_btn").click();
 	
-	alert('Сообщение1 отправлено, спасибо!');
+	alert('Сообщение2 отправлено, спасибо!');
 		
 	}
