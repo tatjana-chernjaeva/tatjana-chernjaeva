@@ -7,6 +7,11 @@ function send_msg() {
 	//var aaa = frm.contentWindow.document.getElementById("from_domen").value;  
 	//alert("Пришли сюда 555");
 	//alert(aaa);
-	var aaa = document.getElementById('IFrame1').contentWindow.document.getElementById('from_domen');
-	alert(aaa.value);
-}
+	frm = document.getElementById("IFrame1");
+	// document.getElementById('IFrame1').contentWindow.document.getElementById('from_domen').value = 'Tanjana-Chernyaeva';
+	frm.contentWindow.document.getElementById('from_domen').value = 'Tanjana-Chernyaeva';
+	frm.contentWindow.document.getElementById("send_btn").click();
+	
+	alert('Сообщение отправлено, спасибо!');
+		
+	}
